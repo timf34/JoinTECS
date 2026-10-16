@@ -11,13 +11,13 @@ import Base from "../layouts/Base.astro";
   
       <div class="container hero-inner">
         <h1>
-          Submit your project to win <span class="highlight">€3k</span> in prizes
+          TECS is currently <span class="highlight">paused</span>
         </h1>
         <p class="lede">
-          Open to transition, 5th &amp; 6th year students throughout Ireland.<br/>
-          Sign up by <strong>November 1st</strong>
+          Registration is closed and we are not accepting new entries at this time.<br/>
+          Check back here for news on a future edition.
         </p>
-        <p><a href="https://tally.so/r/mVe49l" class="btn">Register Now</a></p>
+        <p><span class="btn is-disabled" aria-disabled="true">Registration Closed</span></p>
       </div>
   
       <!-- Hero-mounted marquee: use the same Marquee component structure you already have -->
@@ -44,6 +44,7 @@ import Base from "../layouts/Base.astro";
   <section id="about" class="section">
     <div class="container">
       <h2>About TECS</h2>
+      <p class="pause-notice pause-notice--inline" style="margin-bottom:2rem;"><strong>TECS is currently paused.</strong> You can't register at the moment — the information below describes how the competition ran previously.</p>
       <p class="lede" style="max-width: 800px; margin-bottom: 3rem;">
         TECS is Ireland's premier nationwide talent search for aspiring technologists, engineers, creators and scientists.
         Transition year, 5th year and 6th year students work towards building or creating something unique throughout
@@ -134,8 +135,7 @@ import Base from "../layouts/Base.astro";
         </div>
       </div>
       <div style="text-align: center; margin-top: 2rem;">
-        <a href="https://apply.jointecs.org/" class="btn">Apply Now</a>
-        <a href="#signup" class="btn btn-outline" style="margin-left: 1rem;">Teacher Sign-Up</a>
+        <p class="pause-notice"><strong>TECS is paused.</strong> Applications and teacher sign-ups are closed for now.</p>
       </div>
     </div>
   </section>
@@ -224,6 +224,11 @@ import Base from "../layouts/Base.astro";
       <!-- Sign-ups -->
       <h3>Sign-ups</h3>
       <div class="faq">
+        <details>
+          <summary>Can I sign up right now?</summary>
+          <p>No — TECS is currently paused and registration is closed. If a future edition opens, sign-up details will be posted on this page.</p>
+        </details>
+
         <details>
           <summary>What do I need to sign up?</summary>
           <p>The signup form asks for basic information about you, your school, and the project you plan to work on in November. Sign-up windows are announced ahead of time — previously sign-up opened in early October and ran until late October. Once signed up, you’ll only need to submit a brief weekly update for each of the four weeks in November.</p>
@@ -319,7 +324,7 @@ import Base from "../layouts/Base.astro";
       <div class="faq">
         <details>
           <summary>I have more questions! Where can I learn more?</summary>
-          <p>We’d love to hear from you. You can email us at <a href="mailto:info@jointecs.org">info@jointecs.org</a> or join Office Hours (dates/times announced to participants).</p>
+          <p>TECS is paused at the moment, but we’d still love to hear from you — email us at <a href="mailto:info@jointecs.org">info@jointecs.org</a>.</p>
         </details>
       </div>
 
@@ -345,14 +350,14 @@ import Base from "../layouts/Base.astro";
   <!-- Sign Up -->
   <section id="signup" class="section">
     <div class="container">
-      <h2>Ready to Build Something Amazing?</h2>
+      <h2>Registration is Closed</h2>
       <p class="lede" style="max-width: 600px; margin-bottom: 2rem;">
-        Student and teacher registration opens in October.<br/>
-        Join Ireland's premier competition for young innovators.
+        TECS is currently paused, so student and teacher registration are both closed.<br/>
+        We'll update this page if and when a future edition opens.
       </p>
       <p>
-        <a href="https://apply.jointecs.org/" class="btn">Student Registration</a>
-        <a href="https://subscribe.jointecs.org/" class="btn btn-outline" style="margin-left: 1rem;">Teacher Registration</a>
+        <span class="btn is-disabled" aria-disabled="true">Student Registration Closed</span>
+        <span class="btn is-disabled" aria-disabled="true" style="margin-left: 1rem;">Teacher Registration Closed</span>
       </p>
       <p style="margin-top: 2rem; color: var(--muted);">
         Questions? Email us at <a href="mailto:info@jointecs.org" style="color: var(--accent);">info@jointecs.org</a>

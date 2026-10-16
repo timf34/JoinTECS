@@ -604,3 +604,31 @@
   .supporters-banner .supporters-grid{ grid-template-columns: 1fr; }
   .supporters-banner { padding: 1.25rem 0; }
 }
+
+/* =========================
+   Paused / registration closed
+   ========================= */
+.pause-notice{
+  display:block;
+  max-width:720px;
+  margin:1.25rem auto 0;
+  padding:.9rem 1.1rem;
+  border:2px solid var(--accent);
+  border-radius:12px;
+  background:rgba(62,168,111,.10);
+  color:inherit;
+  font-weight:600;
+  line-height:1.5;
+}
+.pause-notice--inline{ margin-left:0; margin-right:0; }
+.pause-notice strong{ color:var(--accent); }
+.btn.is-disabled{
+  background:var(--muted);
+  border-color:var(--muted);
+  color:#fff;
+  opacity:.65;
+  cursor:not-allowed;
+  pointer-events:none;
+  box-shadow:none;
+  transform:none;
+}
